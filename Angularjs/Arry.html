@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html  ng-app="m">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+<div ng-app='m' ng-controller='my'>
+<ol>
+<li ng-repeat="s in city">
+{{s}}</li>
+<li ng-repeat="ss in detail">{{ss.name+""+ss.city}}</li>
+</ol>
+</div>
+<script>
+var app=angular.module('m',[]);
+app.controller('my',function($scope){
+$scope.city=["mumbai","delhi","mp","up","AndhraPradesh"];
+
+$scope.detail=[
+{"name":"hindi",city":"mumbai"},{"name":"telgu",city":"Telagana"},
+{"name":"English",city":"bhopal"},{"name":"Marathi",city":"Nagpur"},
+{"name":"Urdu",city":"Andhra praddesh"},{"name":"Bagheli",city":"Rewa"},
+];
+});
+</script>

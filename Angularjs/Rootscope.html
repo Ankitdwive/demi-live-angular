@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html  ng-app="m">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+<div ng-controller="contr">
+Name    :<input type="text" ng-model="name"><br>
+Age     :<input type="text" ng-model="age"><br>
+City    :<input type="text" ng-model="city"><br>
+Distric :<input type="text" ng-model="distric"><br>
+name:{{name}}<br>
+Age:{{age}}<br>
+City:{{city}}<br>
+Distric:{{distric}}
+<br>
+
+</div>
+<h1><b>{{name}}</b></h1>
+<h2>
+<i><em>{{maths()}}</em></i></h2>
+<script>
+var app =angular.module('m',[]);
+app.controller('contr',function($scope){
+$scope.name="Ankit";$scope.age=23;$scope.city="hanumana";$scope.distric="rewa";
+});
+
+app.run(function($rootScope){
+$rootScope.name="hello outer with rootScope";
+
+$rootScope.maths=function(){
+return $rootScope.name+ " :this variable calling with the help of function";
+};
+});
+</script>
+

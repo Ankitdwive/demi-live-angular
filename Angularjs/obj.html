@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<h2>Adding a directive</h2>
+
+<div ng-app="my" w>
+</div>
+<script>
+var app=angular.module('my',[]);
+app.directive('w',function(){
+return{
+template:"hello angularjs"
+};
+});
+</script>

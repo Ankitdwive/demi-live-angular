@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<h3>module</h3>
+module is a container for the different part of the application<hr>
+<h3>controllere</h3>
+controller are use to controlling a application of the data
+Controller always belongs to module
+<hr>
+
+<div ng-app="my" ng-controller="myctrl" ><br>
+<input type="text" ng-model="name">
+{{name}}<br>
+{{fname+"  "+lname}}
+</div>
+<script>
+var app=angular.module('my',[]);
+app.controller('myctrl',function($scope){
+$scope.fname="aman";
+$scope.lname="shukla";
+});
+</script>

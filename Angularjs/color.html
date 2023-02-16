@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html >
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<style>
+body{
+background-color:{{name}}
+}
+</style>
+<body>
+<div  >
+<input type="text" ng-model="name">
+{{name}}
+
+</div><br>
+<select ng-model="name">
+<option>red</option>
+<option>blue</option>
+<option>green</option>
+<option>yellow</option>
+</select><br><br>
+<div ng-init="detail=['name','age','qulification']">
+<div ng-repeat="x in detail">
+{{x[3]}}
+</div>
+{{detail}}
+</div>
+</body>
+</html>
+
+<div ng-app="ma" ng-controller="ctr">
+
+City:<input type="text" ng-model="city" city=""><br>
+State :<input type="text" ng-model="state" city="">
+<br> {{city}}
+
+{{state}}
+{{detail()}}
+</div>
+
+
+
+
+
+
+<script>
+var app=angular.module('ma',[])
+app.controller('ctr',function($scope){
+$scope.city="up";
+$scope.state="noida";
+
+ $scope.detail=function(){
+return "This is function variable  :" +$scope.city+" :"+$scope.state;
+};
+});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

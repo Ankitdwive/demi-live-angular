@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+<h2>Adding a directive</h2>
+<div ng-app="" ng-init="names=[
+{name:'ankit',country:'india'},
+{name:'kai',country:'swedon'}]">
+{{names}}
+<ul>
+<li ng-repeat="x in names">
+{{x.name+" "+x.country}}</li>
+</ul>
+</div>

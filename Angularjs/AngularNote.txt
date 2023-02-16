@@ -1,0 +1,91 @@
+Q.1 What is directive
+Ans. directive is nothing but its angular sentences inside a html and go and change
+html and dom
+============================================================================
+Q.2 Explain the diffrent type of directive in angular
+Ans: there are three type of directive
+1.Structure Directive:- Change the structre in dom element and change a structure in dom and
+and add a structure of a dom.
+
+Ex:-<tr *ngFor="let temp SalesModelObjs">
+<td>{{temp.Customername}}</td>
+<td>{{temp.PaidAmmount}}</td>
+<td>{{temp.ProductCode}}</td>
+</tr>
+
+2.Attribute Directive:- Attribute Directive does not and remove dirctory and its not change a structure
+and its change only behaviour means chage the appearance and behaviour of html elements.
+Ex:-<div [hidden]="hide()">hello</div>
+something changeing a color and size but not change a behaviour
+
+3.Component Directive:- Component Directive is nothing but its a user controle of template.
+means  direcctive with template ,iits like a user control
+Ex:-templateUrl:'./app.componemt.html
+
+short form(SAC)
+=========================================================================
+Q.3 Explain the importance  of Npm And Node_Modules folder
+Ans:- NPM(node package Manager)
+1.npm help to install any javascript framework easily
+Exp:-npm inistall jquery
+
+2.node_modules is the folder where all the package are installed
+===============================================================================
+
+Q.4: Explain the importance of package .json file in angulor
+Ans:-package .json is a one of the file where all refrences of javascript frame work file are listed 
+down
+It has all the js refrrences needed for a project. so rather than installing one package at a time
+as we can install all package in one go.
+
+=========================================================================
+Q.5: What is a typescript
+Ans:-Typescript extended  js by adding  type to the language
+It gives a nice oop environment which transpiles/converts to javascript
+
+
+Typescript is a superset of javascript.it added types to javascript.
+it gives a nice oop environment which transpiles/convert to javascript
+
+So as its strongly typed we will have less errors and because we can do oop
+with javascript our productivity and quality also increases
+==============================================================================
+Q.6:- Explain impoortance of Angular Cli
+Ans:- CLI(Command Line Interface)
+Cli help  you to go create a radimed angular project template 
+npm install -g @angular/cli
+Angular CLI is a command line interface by which we can create initial Angular 
+project template .So rather than starting from scratch we have some boiler plate code
+===somethinng create a new component ===
+ng new myapp
+===============================================================
+Q.7:- Explain the importance of component and modules
+Ans:- Component is where you write you binding code .Module logically group components.
+Componet into somethig a called module
+Module group angular component 
+
+=======================================================================
+Q.8:- What is decoder in angular?
+Ans:-
+Decorator defines what kind of angular class is it . for example if you decorate"@Component"
+then it says it's an Angular Component ,if you put "@NgModule" It becomes a Angular Module
+=======================================================================================
+
+Q.9:-What are annotation or meta  data 
+meta data means data about data
+============================
+template of nothing its html view of angular in which we can write directives
+
+there are two way define template ine is inline and other is a seperate html file
+
+
+
+
+
+
+
+
+
+
+
+

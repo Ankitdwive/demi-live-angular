@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<p>Try to change the names.</p>
+<h2>ng-model</h2>
+<p>The ng-model directive binds the value of HTML controls (input, select, textarea) to application data.<hr>
+
+</p>
+ <p><h2>{{}}</h2>
+{{}}it is a use to expression way in angular kjava script<p><hr>
+<h2>ng-bind</h2>
+<p>ng-bind are use to expression way means same like a {{}} braces </p><hr>
+<h2>ng-init </h2>
+<p>ng-init are use to initialize of a variable value</p>
+<hr>
+<div ng-app="" ng-init="ankit='5'">
+ {{ankit}}
+<p> Number<span ng-bind="ankit"></p>
+<br>
+
+<input type="text" ng-model="x"><br>
+
+<input type="text" ng-model="y"><br>
+
+<input type="text"value="{{x*y}}">
+</div>
+</body>
+</html>

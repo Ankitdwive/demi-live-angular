@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+
+<p>Try to change the names.</p>
+<div ng-app="my" ng-controller="myctrl">
+<input type="text" ng-model="fname">
+<input type="text" ng-model="lname">
+<br>
+fullname:{{fname+""+lname}}
+</div>
+<script>
+var app=angular.module('my',[]);
+app.controller('myctrl',function($scope){
+$scope.fname="ankit";
+$scope.lname="dwivedi";
+});
+</script>
+</body>
+</html>
